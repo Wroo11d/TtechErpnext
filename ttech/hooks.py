@@ -215,3 +215,12 @@ app_include_css = "/assets/ttech/css/ttech.css"
 # auth_hooks = [
 #	"ttech.auth.validate"
 # ]
+
+fixtures = [
+    {
+        "dt": "Role", 
+        "filters": [[
+	        "name", "in", ["Finance Manager", "CFO", "Finance Officer"]
+        ]]
+    }
+]
