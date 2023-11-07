@@ -1,0 +1,3 @@
+ttech.patches.insert_roles
+ttech.patches.insert_cfo_permissions
+ttech.patches.insert_finance_manager_permissions
