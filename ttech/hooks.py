@@ -217,13 +217,18 @@ app_include_css = "/assets/ttech/css/ttech.css"
 # ]
 
 fixtures = [
-#    {
-#       "dt": "Role", 
-#        "filters": [[
-#	        "name", "in", ["Finance Manager", "CFO", "Finance Officer"]
-#        ]]
-#    },
-    
+    {
+        "dt": "Workflow Action Master"
+    },
+    {
+        "dt": "Workflow State"
+    },
+    {
+        "dt": "Workflow", 
+        "filters": [[
+            "name", "in", ["Sales Order"]
+        ]]
+    },
     {
     	"dt": "Custom Field",
     	"filters": [[
