@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "autoname": "format:{role}-{doctype_name}-{currency}",
+ "creation": "2023-11-09 14:18:13.845604",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "role",
+  "column_break_eray4",
+  "doctype_name",
+  "section_break_dzadk",
+  "currency",
+  "column_break_3eqsy",
+  "maximum_allowed_amount",
+  "hr_settings_section",
+  "maximum_allowed_days",
+  "section_break_ychm4",
+  "last_updated_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Role",
+   "read_only_depends_on": "eval:doc.currency == 'IQD';",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_eray4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doctype_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctype Name",
+   "options": "DocType",
+   "read_only_depends_on": "eval:doc.currency == 'IQD';",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hr_settings_section",
+   "fieldtype": "Section Break",
+   "label": "HR Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "maximum_allowed_days",
+   "fieldtype": "Float",
+   "label": "Maximum Allowed Days",
+   "read_only_depends_on": "eval:doc.currency == 'IQD';"
+  },
+  {
+   "fieldname": "section_break_dzadk",
+   "fieldtype": "Section Break",
+   "label": "Sales Settings"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3eqsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "maximum_allowed_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Maximum Allowed Amount",
+   "options": "currency",
+   "read_only_depends_on": "eval:doc.currency == 'IQD';",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ychm4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "last_updated_on",
+   "fieldtype": "Datetime",
+   "label": "Last Updated On",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-10 13:06:15.392751",
+ "modified_by": "Administrator",
+ "module": "ttech",
+ "name": "User Authority Matrix",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

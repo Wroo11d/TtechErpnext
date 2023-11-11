@@ -129,23 +129,13 @@ app_include_css = "/assets/ttech/css/ttech.css"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"ttech.tasks.all"
-#	],
-#	"daily": [
-#		"ttech.tasks.daily"
-#	],
-#	"hourly": [
-#		"ttech.tasks.hourly"
-#	],
-#	"weekly": [
-#		"ttech.tasks.weekly"
-#	],
-#	"monthly": [
-#		"ttech.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	"cron": {
+        "6 0 * * *": [
+            "ttech.scheduler.exchange_rate_update.update_exchange_rate"
+        ]
+    }
+}
 
 # Testing
 # -------
