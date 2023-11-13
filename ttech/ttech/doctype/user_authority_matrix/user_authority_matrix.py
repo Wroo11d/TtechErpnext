@@ -4,7 +4,7 @@
 import frappe
 from frappe.model.document import Document
 import requests
-from frappe.utils import flt
+from frappe.utils import flt, now
 
 class UserAuthorityMatrix(Document):
 	def after_insert(self):
@@ -26,3 +26,15 @@ class UserAuthorityMatrix(Document):
 			iqd_rule.maximum_allowed_amount = flt(self.maximum_allowed_amount * exchange_rate)
 			iqd_rule.flags.ignore_permissions = True
 			iqd_rule.insert()
+
+	def on_update(self):
+		self.update_iqd_rule()
+
+	def update_iqd_rule(self):
+		rule_id = "{0}-{1}-{2}".format(self.role, self.doctype_name, 'IQD')
+		exchange_rate = frappe.db.get_single_value('TTech Settings', 'exchange_rate')
+		if frappe.db.exists('User Authority Matrix', rule_id):
+			frappe.db.set_value('User Authority Matrix', rule_id, {
+				'last_updated_on' : now(),
+				'maximum_allowed_amount' : flt(exchange_rate * self.maximum_allowed_amount)
+			})

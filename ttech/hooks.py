@@ -131,14 +131,6 @@ doctype_js = {
 # Scheduled Tasks
 # ---------------
 
-scheduler_events = {
-	"cron": {
-        "6 0 * * *": [
-            "ttech.scheduler.exchange_rate_update.update_exchange_rate"
-        ]
-    }
-}
-
 # Testing
 # -------
 
