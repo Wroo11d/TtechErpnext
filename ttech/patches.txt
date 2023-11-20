@@ -1,4 +1,7 @@
-ttech.patches.insert_roles
+ttech.patches.insert_roles #re-run
 ttech.patches.insert_cfo_permissions
 ttech.patches.insert_finance_manager_permissions
 ttech.patches.insert_finance_officer_permissions
+ttech.patches.insert_research_and_development_permissions 
+ttech.patches.insert_project_manager_permissions 
+ttech.patches.insert_bidding_permissions 

@@ -210,7 +210,7 @@ fixtures = [
     {
         "dt": "Workflow", 
         "filters": [[
-            "name", "in", ["Sales Order"]
+            "name", "in", ["Sales Order", 'Lead','Opportunity']
         ]]
     },
     {
