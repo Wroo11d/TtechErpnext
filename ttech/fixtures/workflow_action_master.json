@@ -30,6 +30,13 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
+  "modified": "2023-12-08 15:23:06.886168",
+  "name": "Customer",
+  "workflow_action_name": "Customer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
   "modified": "2023-11-09 11:53:33.586684",
   "name": "Disqualify",
   "workflow_action_name": "Disqualify"
@@ -75,6 +82,13 @@
   "modified": "2023-11-09 11:50:37.595490",
   "name": "Nurture",
   "workflow_action_name": "Nurture"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-12-08 15:22:27.294442",
+  "name": "Opportunity",
+  "workflow_action_name": "Opportunity"
  },
  {
   "docstatus": 0,

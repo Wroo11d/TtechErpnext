@@ -48,6 +48,15 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
+  "modified": "2023-12-08 15:23:31.653223",
+  "name": "Customer",
+  "style": "",
+  "workflow_state_name": "Customer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
   "modified": "2023-11-09 12:37:17.132784",
   "name": "Customer Acceptance",
   "style": "",

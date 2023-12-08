@@ -4,7 +4,7 @@
   "doctype": "Workflow",
   "document_type": "Lead",
   "is_active": 1,
-  "modified": "2023-11-09 12:01:16.363906",
+  "modified": "2023-12-08 16:10:45.434590",
   "name": "Lead",
   "override_status": 0,
   "send_email_alert": 1,
@@ -45,8 +45,21 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Qualified",
-    "update_field": null,
-    "update_value": null
+    "update_field": "qualification_status",
+    "update_value": "Qualified"
+   },
+   {
+    "allow_edit": "Sales Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Lead",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Qualified",
+    "update_field": "status",
+    "update_value": "Qualified"
    },
    {
     "allow_edit": "Sales Manager",
@@ -58,8 +71,8 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Junk",
-    "update_field": null,
-    "update_value": null
+    "update_field": "qualification_status",
+    "update_value": "Unqualified"
    },
    {
     "allow_edit": "Sales Manager",
@@ -71,8 +84,8 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Opportunity",
-    "update_field": null,
-    "update_value": null
+    "update_field": "",
+    "update_value": ""
    },
    {
     "allow_edit": "Sales Manager",
@@ -83,20 +96,7 @@
     "parent": "Lead",
     "parentfield": "states",
     "parenttype": "Workflow",
-    "state": "Closed",
-    "update_field": null,
-    "update_value": null
-   },
-   {
-    "allow_edit": "Sales Manager",
-    "doc_status": "0",
-    "is_optional_state": 0,
-    "message": null,
-    "next_action_email_template": null,
-    "parent": "Lead",
-    "parentfield": "states",
-    "parenttype": "Workflow",
-    "state": "Cancelled",
+    "state": "Customer",
     "update_field": null,
     "update_value": null
    }
@@ -104,7 +104,7 @@
   "transitions": [
    {
     "action": "Nurture",
-    "allow_self_approval": 1,
+    "allow_self_approval": 0,
     "allowed": "Sales User",
     "condition": null,
     "next_state": "Nurturing",
@@ -115,7 +115,7 @@
    },
    {
     "action": "Qualify",
-    "allow_self_approval": 1,
+    "allow_self_approval": 0,
     "allowed": "Sales Manager",
     "condition": null,
     "next_state": "Qualified",
@@ -126,7 +126,7 @@
    },
    {
     "action": "Disqualify",
-    "allow_self_approval": 1,
+    "allow_self_approval": 0,
     "allowed": "Sales Manager",
     "condition": null,
     "next_state": "Junk",
@@ -136,8 +136,8 @@
     "state": "Nurturing"
    },
    {
-    "action": "Approve",
-    "allow_self_approval": 1,
+    "action": "Opportunity",
+    "allow_self_approval": 0,
     "allowed": "Sales Manager",
     "condition": null,
     "next_state": "Opportunity",
@@ -147,26 +147,15 @@
     "state": "Qualified"
    },
    {
-    "action": "Close",
-    "allow_self_approval": 1,
+    "action": "Customer",
+    "allow_self_approval": 0,
     "allowed": "Sales Manager",
     "condition": null,
-    "next_state": "Closed",
+    "next_state": "Customer",
     "parent": "Lead",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Opportunity"
-   },
-   {
-    "action": "Cancel",
-    "allow_self_approval": 1,
-    "allowed": "Sales Manager",
-    "condition": null,
-    "next_state": "Cancelled",
-    "parent": "Lead",
-    "parentfield": "transitions",
-    "parenttype": "Workflow",
-    "state": "Junk"
+    "state": "Qualified"
    }
   ],
   "workflow_name": "Lead",
@@ -177,7 +166,7 @@
   "doctype": "Workflow",
   "document_type": "Opportunity",
   "is_active": 1,
-  "modified": "2023-11-11 12:50:58.630601",
+  "modified": "2023-12-08 16:42:37.385503",
   "name": "Opportunity",
   "override_status": 0,
   "send_email_alert": 1,
@@ -315,6 +304,17 @@
   ],
   "transitions": [
    {
+    "action": "Site Survey",
+    "allow_self_approval": 1,
+    "allowed": "Sales User",
+    "condition": null,
+    "next_state": "Site Survey",
+    "parent": "Opportunity",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Created"
+   },
+   {
     "action": "Gather Requirements",
     "allow_self_approval": 1,
     "allowed": "Sales User",
@@ -326,26 +326,15 @@
     "state": "Created"
    },
    {
-    "action": "Site Survey",
+    "action": "Gather Requirements",
     "allow_self_approval": 1,
     "allowed": "Research and Development",
     "condition": null,
-    "next_state": "Site Survey",
+    "next_state": "Requirements Gathering",
     "parent": "Opportunity",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Requirements Gathering"
-   },
-   {
-    "action": "Price and Size",
-    "allow_self_approval": 1,
-    "allowed": "Research and Development",
-    "condition": null,
-    "next_state": "Priced and Sized",
-    "parent": "Opportunity",
-    "parentfield": "transitions",
-    "parenttype": "Workflow",
-    "state": "Requirements Gathering"
+    "state": "Site Survey"
    },
    {
     "action": "Price and Size",
@@ -357,6 +346,17 @@
     "parentfield": "transitions",
     "parenttype": "Workflow",
     "state": "Site Survey"
+   },
+   {
+    "action": "Price and Size",
+    "allow_self_approval": 1,
+    "allowed": "Research and Development",
+    "condition": null,
+    "next_state": "Priced and Sized",
+    "parent": "Opportunity",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Requirements Gathering"
    },
    {
     "action": "Make Feasibility Study",
