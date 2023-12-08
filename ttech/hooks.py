@@ -11,7 +11,7 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/ttech/css/ttech.css"
+# app_include_css = "/assets/ttech/css/ttech.css"
 # app_include_js = "/assets/ttech/js/ttech.js"
 
 # include js, css files in header of web template
@@ -30,7 +30,9 @@ app_include_css = "/assets/ttech/css/ttech.css"
 
 # include js in doctype views
 doctype_js = {
-    "Employee Advance" : "public/js/employee_advance.js"
+    "Employee Advance" : "public/js/employee_advance.js",
+    "Lead" : "public/js/lead.js",
+    "Opportunity" : "public/js/opportunity.js"
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
