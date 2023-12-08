@@ -2,22 +2,148 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2022-10-19 10:10:56.885039",
+  "modified": "2023-11-08 20:21:01.275975",
   "name": "Approve",
   "workflow_action_name": "Approve"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2022-10-19 10:10:56.887668",
+  "modified": "2023-11-08 20:21:16.527492",
+  "name": "Cancel",
+  "workflow_action_name": "Cancel"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:00:41.716083",
+  "name": "Close",
+  "workflow_action_name": "Close"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:44:55.819672",
+  "name": "Contract",
+  "workflow_action_name": "Contract"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-12-08 15:23:06.886168",
+  "name": "Customer",
+  "workflow_action_name": "Customer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 11:53:33.586684",
+  "name": "Disqualify",
+  "workflow_action_name": "Disqualify"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:33:20.903894",
+  "name": "Gather Requirements",
+  "workflow_action_name": "Gather Requirements"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:45:28.002092",
+  "name": "Lost",
+  "workflow_action_name": "Lost"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:35:41.957318",
+  "name": "Make Feasibility Study",
+  "workflow_action_name": "Make Feasibility Study"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-11 10:22:34.562377",
+  "name": "Make Proposal",
+  "workflow_action_name": "Make Proposal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:38:35.424847",
+  "name": "Make Site Survey",
+  "workflow_action_name": "Make Site Survey"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 11:50:37.595490",
+  "name": "Nurture",
+  "workflow_action_name": "Nurture"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-12-08 15:22:27.294442",
+  "name": "Opportunity",
+  "workflow_action_name": "Opportunity"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:39:40.820688",
+  "name": "Price and Size",
+  "workflow_action_name": "Price and Size"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 11:51:42.543538",
+  "name": "Qualify",
+  "workflow_action_name": "Qualify"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-08 20:21:06.379317",
   "name": "Reject",
   "workflow_action_name": "Reject"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2022-10-19 10:10:56.891471",
+  "modified": "2023-11-08 20:21:10.295219",
   "name": "Review",
   "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:34:16.742713",
+  "name": "Site Survey",
+  "workflow_action_name": "Site Survey"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:35:20.317197",
+  "name": "Study",
+  "workflow_action_name": "Study"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:44:24.845241",
+  "name": "Submit Proposal",
+  "workflow_action_name": "Submit Proposal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2023-11-09 12:36:29.797082",
+  "name": "Submitted Proposal",
+  "workflow_action_name": "Submitted Proposal"
  }
 ]

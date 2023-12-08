@@ -2,8 +2,8 @@
  {
   "docstatus": 0,
   "doctype": "Workflow State",
-  "icon": "ok-sign",
-  "modified": "2022-10-19 10:10:56.861294",
+  "icon": "",
+  "modified": "2023-11-08 20:20:16.658834",
   "name": "Approved",
   "style": "Success",
   "workflow_state_name": "Approved"
@@ -11,19 +11,190 @@
  {
   "docstatus": 0,
   "doctype": "Workflow State",
-  "icon": "question-sign",
-  "modified": "2022-10-19 10:10:56.858228",
-  "name": "Pending",
+  "icon": "",
+  "modified": "2023-11-08 20:20:28.958835",
+  "name": "Cancelled",
+  "style": "Danger",
+  "workflow_state_name": "Cancelled"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:01:06.135681",
+  "name": "Closed",
+  "style": "Inverse",
+  "workflow_state_name": "Closed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:31:41.163976",
+  "name": "Contract - Active",
   "style": "",
+  "workflow_state_name": "Contract - Active"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:32:49.422070",
+  "name": "Created",
+  "style": "",
+  "workflow_state_name": "Created"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-12-08 15:23:31.653223",
+  "name": "Customer",
+  "style": "",
+  "workflow_state_name": "Customer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:37:17.132784",
+  "name": "Customer Acceptance",
+  "style": "",
+  "workflow_state_name": "Customer Acceptance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:28:09.591887",
+  "name": "Feasibility Study",
+  "style": "",
+  "workflow_state_name": "Feasibility Study"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 11:59:42.211380",
+  "name": "Junk",
+  "style": "Warning",
+  "workflow_state_name": "Junk"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:31:22.559692",
+  "name": "Lost",
+  "style": "",
+  "workflow_state_name": "Lost"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:19:23.675949",
+  "name": "Nurturing",
+  "style": "Primary",
+  "workflow_state_name": "Nurturing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:00:01.423509",
+  "name": "Opportunity",
+  "style": "Primary",
+  "workflow_state_name": "Opportunity"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-08 20:19:28.375733",
+  "name": "Pending",
+  "style": "Primary",
   "workflow_state_name": "Pending"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
-  "icon": "remove",
-  "modified": "2022-10-19 10:10:56.866321",
+  "icon": "",
+  "modified": "2023-11-09 12:27:19.522772",
+  "name": "Priced and Sized",
+  "style": "",
+  "workflow_state_name": "Priced and Sized"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:30:35.936882",
+  "name": "Proposal Submitted",
+  "style": "",
+  "workflow_state_name": "Proposal Submitted"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 11:59:20.841544",
+  "name": "Qualified",
+  "style": "Success",
+  "workflow_state_name": "Qualified"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-08 20:19:55.211401",
   "name": "Rejected",
   "style": "Danger",
   "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:25:15.687266",
+  "name": "Requirements Gathering",
+  "style": "",
+  "workflow_state_name": "Requirements Gathering"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-08 20:20:06.627987",
+  "name": "Reviewed By SM",
+  "style": "Info",
+  "workflow_state_name": "Reviewed By SM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:26:15.022871",
+  "name": "Site Survey",
+  "style": "",
+  "workflow_state_name": "Site Survey"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-09 12:29:40.416278",
+  "name": "To Bidding",
+  "style": "",
+  "workflow_state_name": "To Bidding"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-11-08 20:19:44.581182",
+  "name": "Under Review",
+  "style": "Inverse",
+  "workflow_state_name": "Under Review"
  }
 ]
